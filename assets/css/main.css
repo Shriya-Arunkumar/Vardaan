@@ -19,20 +19,20 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #47126b; /* Color for headings, subheadings and title throughout the website */
+  --background-color: #10002b; /* Background color for the entire website, including individual sections */
+  --default-color: #fff; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #fff; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #ea698b; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --surface-color: #16183f; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #10002b; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #ffffff;  /* The default color of the main navmenu links */
+  --nav-color: #fff;  /* The default color of the main navmenu links */
   --nav-hover-color: #b9faf8; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-mobile-background-color: #10002b; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: green; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: #b9faf8; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
@@ -40,16 +40,16 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f4f5fe;
-  --surface-color: #ffffff;
+  --background-color: #10002b;
+  --surface-color: #3c096c;
 }
 
 .dark-background {
-  --background-color: #47126b;
-  --default-color: #ffffff;
+  --background-color: #5a189a;
+  --default-color: #10002b;
   --heading-color: #ffffff;
   --surface-color: #47126b;
-  --contrast-color: #ffffff;
+  --contrast-color: #10002b;
 }
 
 /* Smooth scroll */
@@ -176,7 +176,7 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: #47126b;
+  --background-color: #5a189a;
 }
 
 /*--------------------------------------------------------------
@@ -444,9 +444,10 @@ h6 {
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  color: var(--default-color);
+  color: blue;
   background-color: var(--background-color);
   font-size: 14px;
+  color: #fff !important;
   position: relative;
 }
 
@@ -458,11 +459,15 @@ h6 {
 .footer .footer-about .logo {
   line-height: 1;
   margin-bottom: 25px;
+    color: #fff !important;
+
 }
 
 .footer .footer-about .logo img {
   max-height: 40px;
   margin-right: 6px;
+    color: #fff !important;
+
 }
 
 .footer .footer-about .logo span {
@@ -471,11 +476,15 @@ h6 {
   letter-spacing: 1px;
   font-family: var(--heading-font);
   color: var(--heading-color);
+    color: #fff !important;
+
 }
 
 .footer .footer-about p {
   font-size: 14px;
   font-family: var(--heading-font);
+    color: #fff !important;
+
 }
 
 .footer .social-links a {
@@ -488,6 +497,7 @@ h6 {
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
   font-size: 16px;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: #fff !important;
   margin-right: 10px;
   transition: 0.3s;
 }
@@ -501,16 +511,21 @@ h6 {
   font-size: 16px;
   font-weight: bold;
   position: relative;
+  color: #fff !important;
+
   padding-bottom: 12px;
 }
 
 .footer .footer-links {
   margin-bottom: 30px;
+  color: #fff !important;
+
 }
 
 .footer .footer-links ul {
   list-style: none;
   padding: 0;
+  color: #fff !important;
   margin: 0;
 }
 
@@ -518,15 +533,18 @@ h6 {
   padding-right: 2px;
   font-size: 12px;
   line-height: 0;
+  color: #fff !important;
 }
 
 .footer .footer-links ul li {
   padding: 10px 0;
   display: flex;
+  color: #fff !important;
   align-items: center;
 }
 
 .footer .footer-links ul li:first-child {
+  color: #fff !important;
   padding-top: 0;
 }
 
@@ -534,10 +552,11 @@ h6 {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   display: inline-block;
   line-height: 1;
+  color: #fff !important;
 }
 
 .footer .footer-links ul a:hover {
-  color: var(--accent-color);
+  color: #ea698b
 }
 
 .footer .footer-contact p {
